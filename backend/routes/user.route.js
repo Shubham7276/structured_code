@@ -7,7 +7,7 @@ const authMiddleware = require('../middleware/auth.middleware');
 router.post('/', userController.createUser);
 
 // Protected routes (require authentication)
-router.use(authMiddleware); // Apply authMiddleware to all routes below this line
+// router.use(authMiddleware); // Apply authMiddleware to all routes below this line
 
 // Get all users
 router.get('/', userController.getUsers);
